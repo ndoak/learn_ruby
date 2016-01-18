@@ -3,7 +3,7 @@ require './test_helper'
 
 # Again, a file with a specific name needs to be created, in this case "temperature.rb".
 # $ touch temperature.rb
-require 'temperature'
+require 'temperature.rb'
 
 # Now maybe we can talk more about the lines we ignored last problem.
 # The class definition lets us describe that this is a test,
