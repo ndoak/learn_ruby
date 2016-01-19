@@ -21,13 +21,14 @@ def first_word(word)
 end
 
 def titleize(x)
-    words = x.split
-    words.each do |word|
-        if word.length < 3 unless word == "the" || unless word == "war"
-            word.downcase!
-        elsif word.length > 3 unless word == "over"
-            word.capitalize!
-        end
-      end
-        words.join(' ')
+  x.capitalize!
+  words = x.split
+  words.each do |word|
+    if word != "over"
+      word.length > 3 ? word.capitalize! : word
+    else
+      word
+    end
+  end
+  words.join(' ')
 end
