@@ -1,11 +1,3 @@
-# require 'pry'
-  # letter = ("a".."z").to_a
-  # Rule 1: If a word begins with a vowel sound, add an "ay" sound to the end of the word.
-  # Rule 2: If a word begins with a consonant sound,
-  # move it to the end of the word, and then add an "ay" sound to the end of the word.
-# create array of vowels, the alphabet and just consonants
-# turn cherry into errychay
-
 
 $vowel = ["a", "e", "i", "o","u"]
 $alpha = ("a".."z").to_a
@@ -43,6 +35,8 @@ end
   end
   return i
 end
+
+#alternative to the while loop
 #   count = 0
 #   input.each do |letter|
 #     if $vowel.include? letter
@@ -52,6 +46,7 @@ end
 #     end
 #   end
 #   return count
+
   def last_letter_q(qarray)
     qarray.last == "q"
   end
@@ -62,19 +57,10 @@ end
   if last_letter_q(array)
     array.rotate!
   end
-  return array 
+  return array
   end
 
 
   def first_letter_change_position(array)
     array << "ay"
   end
-
-
-
-
-
-
-
-
-#
