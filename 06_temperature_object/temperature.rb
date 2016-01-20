@@ -1,10 +1,6 @@
-# #1 degree F = 5/9 of one degree Celsius
-#
-#
 class Temperature
 
   def initialize(options = {})
-
     @f = options[:f]
     @c = options[:c]
   end
@@ -12,7 +8,6 @@ class Temperature
 
   def self.in_celsius(num)
     self.new({:c => num})
-
   end
 
   def self.in_fahrenheit(num)
@@ -20,7 +15,6 @@ class Temperature
   end
 
   def to_fahrenheit
-
     if @f.nil?
       @f = (@c * (9.0/5)) + 32
     end
@@ -28,7 +22,6 @@ class Temperature
   end
 
   def to_celsius
-
     if @c.nil?
       @c = (@f - 32) * (5.0/9)
     end
@@ -36,18 +29,19 @@ class Temperature
 end
 
 end
-#
+
 class Celsius < Temperature
+
   def initialize(num)
     @c = num
   end
+
 end
-#
+
 class Fahrenheit < Temperature
 
-def initialize(num)
-  @f = num
+  def initialize(num)
+    @f = num
+  end
+  
 end
-end
-#
-# Temperature.new.to_fahrenheit
