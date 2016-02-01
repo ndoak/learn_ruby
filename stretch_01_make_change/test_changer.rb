@@ -1,5 +1,5 @@
 require './test_helper'
-require 'changer'
+require 'make_change'
 
 class TestChanger < MiniTest::Test
 

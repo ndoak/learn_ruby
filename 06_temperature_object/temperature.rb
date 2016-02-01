@@ -26,7 +26,7 @@ class Temperature
       @c = (@f - 32) * (5.0/9)
     end
    return @c
-end
+  end
 
 end
 
@@ -43,5 +43,5 @@ class Fahrenheit < Temperature
   def initialize(num)
     @f = num
   end
-  
+
 end
